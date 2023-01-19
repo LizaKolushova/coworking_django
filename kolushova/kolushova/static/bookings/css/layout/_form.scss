@@ -1,0 +1,18 @@
+@use '../abstract/colors' as b;
+.form__fieldset {
+    border: 0;
+}
+.form__legeng {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.form__input{
+    border: 3px solid b.$black-color;
+    background-color: b.$green-color;
+    border-radius: 20px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}

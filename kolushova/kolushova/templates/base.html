@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}Колушова Елизавета 211-321 {% endblock %}</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static "booking/image/favicon/favicon-32x32.png"%}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static "booking/image/favicon/favicon-16x16.png"%}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static "booking/image/favicon/apple-touch-icon-180x180.png"%}">
+    <link rel="icon" type="image/png" href="{% static "booking/image/favicon/android-chrome-192x192.png" sizes="192x192"%}">
+    <link rel="manifest" href="{% static "booking/image/favicon/manifest.json"%}">
+    <link rel="stylesheet" media="print" href="{% static "booking/css/print.css"%}">
+    <link rel="stylesheet" href="{% static "booking/css/style.css" %}"/>
+    {% block stylesheet %}{% endblock %}
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+
+            <a href="{% url 'index' %}" class="header__logo logo">
+                <img class="img-fluid" src="{% static "booking/image/logo/logo.svg" %}" alt="Logo coworking">
+            </a>
+
+            <nav class="header__menu menu">
+                <button class="header-toggler" type="button" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu__list_flex-line menu__list">
+                    <li class="menu__item">
+                        <a href="{% url 'index' %}" class="menu__link">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'place' %}" class="menu__link">Коворкинги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'about' %}" class="menu__link">О нас</a>
+                    </li>
+                </ul>
+ 
+            </nav>
+            <div class="header__group-button">
+                <a href="{% url 'registration' %}" class="button header__button button--mode_orange">Регистрация</a>
+                <a href="{% url 'auth' %}" class="button header__button button--mode_green" >Войти</a>
+            </div>
+            
+        </div>
+    </header>
+    <main class="main">
+        {% block content %}
+        {% endblock %}
+        <section class="section-contacts">
+            <div class="container section-contacts__container">
+                <h2 class="section-title section-contacts__title">Наши контакты</h2>
+                <p class="section-contacts__link-wrapper">
+                    <a class="section-contacts__link" href="info@officeflex.ru">Email  info@officeflex.ru</a>
+                </p>
+                <p class="section-contacts__link-wrapper">
+                    <a class="section-contacts__link" href="tel:+74991109610">Телефон  +7 (499) 110-96-10</a>
+                </p>
+                <p class="section-contacts__link-wrapper">
+                    <a class="section-contacts__link" href="https://yandex.ru/maps/-/CCUNiDToCB">Aдрес  г. Москва, Лесная улица, д. 43, офис 525</a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer ">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer-info">
+                    <h2 class="footer-info__title">Coworking</h2>
+                    <p class="footer-info__description" >Данный сайт предоставляет информацию о коворкинг в Москве</p>
+                    <div class="social-media-links">
+                        <a class="social-media" href="#">
+                            <img class="social-media__icon img-fluid" src="{% static "booking/image/logo/Twitter.svg" %}" alt="Twitter">
+                        </a>
+                        <a class="social-media" href="#">
+                            <img class="social-media__icon img-fluid" src="{% static "booking/image/logo/telegram.svg" %}" alt="telegram">
+                        </a> 
+                    </div>
+                </div>
+                <div class="footer__header-copy" >
+                    <nav class="footer__menu menu" >
+                        <ul class="menu__list menu__list_flex-column" style='display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;'> 
+                            <li class="menu__item">
+                                <a href="{% url 'index' %}" class="menu__link">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="{% url 'place' %}" class="menu__link">Коворгинги</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="{% url 'about' %}" class="menu__link">О нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__privacy-policy">
+                <p class="copyright">© 2022 Coworking</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Политика конфиденциальности</a>
+                    <a href="#" class="footer__link">Договора</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <script src="{% static "booking/js/main.js"%}"></script> 
+      {% block script %}{% endblock %}
+</body>
+
+</html>

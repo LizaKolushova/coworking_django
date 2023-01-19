@@ -1,0 +1,56 @@
+@use '../abstract/colors' as b;
+.section-contacts {
+    background:  rgba(254, 117, 62, 0.05);
+    position: relative;
+    padding: 48px 0 111px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 65px;
+      }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    &__link-wrapper {
+        margin-bottom: 8px;
+      }
+    &__link {
+        color: b.$black-color;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1rem;
+      }
+  }
+  .section-contacts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+.section-contacts * {
+    z-index: 100;
+  }
+  .section-contacts::before {
+    mix-blend-mode: hard-light;
+  }
+
+  .section-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8125rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+
+  
+
+  

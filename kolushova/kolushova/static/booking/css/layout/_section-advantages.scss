@@ -1,0 +1,97 @@
+@use '../abstract/colors' as b;
+
+.section-advantages {
+    position: relative;
+    padding: 4.125rem 0 6.5625rem;
+    &__block {
+        padding-top: 3.375rem;
+      }
+      &__container {
+        display: flex;
+        flex-direction: column;
+      }
+    
+  }
+  .section-advantages::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../image/background/section-advantages.jpg") no-repeat center/cover;
+    opacity: 0.25;
+    z-index: 1;
+  }
+  .section-advantages * {
+    z-index: 100;
+  }
+  .section-advantages::before {
+    mix-blend-mode: hard-light;
+  }
+  
+  .icon-money {
+    width: 36.63px;
+  }
+  
+  .icon-document-check {
+    width: 33.59px;
+  }
+  
+  .icon-support, .icon-document, .icon-requirement {
+    width: 36.64px;
+  }
+  
+  .icon-calendar {
+    width: 37px;
+  }
+
+  .advantages {
+    display: flex;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+ 
+  }
+  .advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+  }
+  .advantage__image-wrapper--background_green {
+    background: b.$green-color;
+    box-shadow: 0 17px 17px rgba(43, 227, 160, 0.28);
+  }
+  
+  .advantage__image-wrapper--background_white {
+    background: b.$white-color;
+    box-shadow: 0 17px 17px rgba(255, 255, 255, 0.28);
+  }
+  .advantage {
+    margin-bottom: 2.875rem;
+    &__image-wrapper {
+        border-radius: 12px;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.125rem;
+      }
+      &__title {
+        max-width: 256px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+  }
+
+  
+
+  
+

@@ -1,0 +1,140 @@
+
+@media (min-width: 1200px) {
+    .media__image-wrapper {
+      flex-shrink: 0;
+    }
+  
+    .menu__list {
+      gap: 30px;
+    }
+    .header-toggler {
+        display: none;
+      }
+
+  }
+  @media(min-width: 769px){
+    .header-toggler {
+        display: none;
+      }
+  }
+  @media (max-width: 1199px) {
+    .menu__list {
+      gap: 1rem;
+    }
+  
+    .section-media {
+      padding: 70px 0 35px;
+    }
+
+  }
+  @media (max-width: 768px) {
+    .header__menu {
+      text-align: right;
+    }
+  
+    .menu__list_flex-line,.header__group-button {
+      max-height: 0;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .header__group-button{
+      display: none;
+    }
+  
+    .media {
+      flex-direction: column;
+    }
+  
+    .section-contacts__header {
+      flex-wrap: wrap;
+    }
+  
+    .footer__menu {
+      margin-right: 1rem;
+    }
+    
+  }
+  @media (max-width: 575px) {
+    .container {
+      padding: 0 20px;
+    }
+  
+    .media__learn-more,
+  .footer__menu,
+  .section-contacts__logo,
+  .section-banner__learn-more {
+      display: none;
+    }
+  
+    .section-title {
+      text-align: left;
+      font-size: 1.875rem;
+    }
+  
+    .footer__info {
+      flex-wrap: wrap;
+      row-gap: 33px;
+    }
+  
+    .footer__links {
+      order: -1;
+      flex-direction: column;
+      margin-left: 0;
+    }
+  
+    .section-contacts__link-wrapper + .section-contacts__link-wrapper {
+      margin-top: 2rem;
+    }
+  
+    .accordion__item {
+      padding: 0 1.875rem;
+    }
+  
+    .advantages {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .section-advantages__title {
+      text-align: center;
+    }
+  
+    .media__item {
+      -moz-column-gap: 0.875rem;
+           column-gap: 0.875rem;
+    }
+  
+    .circle {
+      width: 9px;
+      height: 9px;
+    }
+  
+    .section-advantages__block,
+  .media__body {
+      background: none;
+      -webkit-backdrop-filter: none;
+              backdrop-filter: none;
+      border-radius: 0;
+    }
+  
+    .section-advantages__block,
+  .media__body {
+      padding: 0;
+    }
+  
+    .accordion {
+      margin: 0 -15px;
+    }
+  
+    .section-banner__title {
+      font-size: 1.5625rem;
+    }
+  
+    .button {
+      font-size: 1rem;
+    }
+  
+    .header__container {
+      padding: 0;
+    }
+  }

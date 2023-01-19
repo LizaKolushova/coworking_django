@@ -1,0 +1,62 @@
+@use '../abstract/colors' as b;
+
+.section-media {
+    position: relative;
+}
+
+.section-media::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    z-index: 1;
+}
+
+.section-media * {
+    z-index: 100;
+}
+
+.section-media::before {
+    mix-blend-mode: hard-light;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+
+    &__body {
+        padding: 44px 54px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+    }
+
+    &__list {
+        margin-bottom: 2.1875rem;
+    }
+
+    &__item {
+        display: flex;
+        gap: 1.5rem;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 20px;
+        margin-bottom: 1.75rem;
+        align-items: center;
+    }
+
+}
+
+.circle {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    background: b.$green-color;
+    border-radius: 100%;
+}

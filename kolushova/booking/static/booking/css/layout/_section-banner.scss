@@ -1,0 +1,54 @@
+@use '../abstract/colors' as b;
+
+.section-banner {
+    height: 100vh;
+    position: relative;
+    margin: 3rem auto;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 2.8125rem;
+      text-align: left;
+      color: b.$black-color;
+      margin-bottom: 2rem;
+    }
+    &__text{
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: 0.3px;
+    }
+    &__description{
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 21px;
+      letter-spacing: 0.3px;
+      color: #7D8186;
+    }
+    &__phrase{
+      margin: 0 2rem;
+    }
+    &__title-break {
+      display: block;
+    }
+  }
+  .section-banner__call-action{
+    display: flex;
+    padding: 2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px rgba(64, 72, 82, 0.1);
+    border-radius: 10px;
+  }
+  .section-banner__img{
+    max-width: 60vw;
+    position: absolute;
+    right: 10vw;
+    z-index: -4;
+  }
+

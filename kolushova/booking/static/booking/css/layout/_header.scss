@@ -1,0 +1,25 @@
+@use '../abstract/colors' as b;
+
+.header {
+    background: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.9rem;
+    z-index: 101;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__button {
+    text-decoration: none;
+    border: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+

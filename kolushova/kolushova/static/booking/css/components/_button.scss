@@ -1,0 +1,25 @@
+@use '../abstract/colors' as b; 
+.button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 1.125rem 1.875rem;
+    border: none;
+  }
+  
+  .button--mode_dark {
+    color: b.$white-color;
+    background: transparent;
+  }
+  
+  .button--mode_light {
+    color: b.$black-color;
+    background: b.$white-color;
+  }
+  
+  .button--mode_grey {
+    color: b.$white-color;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+  }
+  

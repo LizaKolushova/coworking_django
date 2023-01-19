@@ -1,0 +1,29 @@
+@use '../abstract/colors' as b;
+
+.whoamI{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: b.$blue-color;
+    height: 100vh;
+    justify-content: center;
+    &__picture{
+        display: flex;
+        flex-direction: column;
+    }
+    &__photo{
+        width: 314px;
+        height: 414px;
+        border-radius: 16px;
+    }
+    &__human{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 1200px;
+        margin-left: 150px;
+    }
+    &__phrase{
+        margin: 14px 0;
+    }
+}

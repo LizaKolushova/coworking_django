@@ -1,0 +1,4 @@
+@mixin text($margin: 1em) {
+    margin-block-start: $margin;
+    margin-block-end: $margin;
+}

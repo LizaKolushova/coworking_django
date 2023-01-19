@@ -1,0 +1,36 @@
+@use '../abstract/colors' as b;
+.progress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: b.$blue-color;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 70vh;
+    justify-content: center;
+    flex-wrap: nowrap;
+    &__name{
+        font-size: 70px;
+    }
+    &__cards{
+        background-color: b.$black-color;
+        width: 200px;
+        min-height: 150px;
+        margin: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__collection{
+        display: -webkit-box;
+        list-style: none;
+        padding: 0;
+        overflow-x: auto;
+        max-width: 1200px;
+    }
+}
+
+.cards__percentages{
+    margin: 18px auto;
+}

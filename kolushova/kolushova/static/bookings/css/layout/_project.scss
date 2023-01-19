@@ -1,0 +1,22 @@
+@use '../abstract/colors' as b;
+@use '../abstract/placeholders' as *;
+
+.project{
+    @extend %flexss;
+    background-color: b.$blue-color;
+    height: 110vh;
+    &__name{
+        font-size: 70px;
+    }
+    &__card{
+        padding: 20px;
+    }
+}
+.collection{
+    display: -webkit-box;
+    list-style: none;
+    padding: 0;
+    overflow-x: auto;
+    max-width: 1200px;
+}
+

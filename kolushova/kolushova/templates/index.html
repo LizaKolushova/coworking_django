@@ -1,0 +1,65 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Коворкинг {% endblock %}
+
+{% block content %}
+<section class="section-banner">
+    <div class="container section-banner__container">
+        <h1 class="section-banner__title"><span class="section-banner__title-break">Забронируй коворкинг </span>
+            <span class="section-banner__title-break">более 10 локаций </span>
+            в Москве</h1>
+        <div class="section-banner__call-action">
+            <div class="section-banner__phrase">
+                <p class="section-banner__description">Удобное пространство</p>
+                <p class="section-banner__text">Коворкинг</p>
+            </div>
+        <a href="{% url 'place' %}" class="button section-banner__button button--mode_orange">Забронировать</a>
+        </div>
+        <img class="section-banner__img img-fluid" src="{% static "booking/image/banner.jpg" %}" alt="banner in a coworking ">
+    </div>
+</section>
+<section class="section-projects">
+    <div class="container section-projects__container">
+        <div class="section-projects__our"> 
+            <h2 class="section-projects__title"> Наши проекты </h2>
+            <p class="section-projects__description"> База смарт-офисов и коворкингов со специальными условиями для вас </p>
+            <ul class="section-projects__quantity quantity">
+                <li class="quantity__item">
+                    <p class="quantity__number"> 100+ </p>
+                    <p class="quantity__text"> Комфортных рабочих мест </p>
+                </li>
+                <li class="quantity__item">
+                    <p class="quantity__number"> 10+ </p>
+                    <p class="quantity__text"> Коворкингов в Москве </p>
+                </li>
+            </ul>
+        </div>
+        <div class="section-projects__pluses"> 
+            <ul class="section-projects__enum enum">
+                <li class="enum__item">
+                    <img class="enum__img img-fluid" src="{% static "booking/image/logo/todo.svg" %}" alt="To do">
+                    <div class="enum__card">
+                        <p class="enum__title">Подберем локации </p>
+                        <p class="enum__text"> В соответствие с вашей задачей. Закрепленные рабочие места, open space, отдельную переговорную. </p>
+                    </div>
+                </li>
+                <li class="enum__item">
+                    <img class="enum__img img-fluid" src="{% static "booking/image/logo/alarm.svg" %}" alt="Alarm">
+                    <div class="enum__card">
+                        <p class="enum__title"> Гибкий график </p>
+                        <p class="enum__text"> Процесс бронирования рабочего пространства занимает менее 2 минут.. </p>
+                    </div>
+                </li>
+                <li class="enum__item">
+                    <img class="enum__img img-fluid" src="{% static "booking/image/logo/home.svg" %}" alt="Home">
+                    <div class="enum__card">
+                        <p class="enum__title"> Согласуем условия </p>
+                        <p class="enum__text"> Наилучшие условия для наших клиентов. </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,30 @@
+@use '../abstract/colors' as b;
+
+.section-place {
+    position: relative;
+    margin: 8rem auto;
+    &__container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__title{
+        margin: 1rem;
+    }
+}
+.section-rate{
+    position: relative;
+    margin: 8rem auto;
+    &__container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__title{
+        margin: 1rem;
+    }
+}

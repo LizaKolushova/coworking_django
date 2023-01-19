@@ -1,0 +1,16 @@
+@use '../abstract/colors' as b;
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: b.$black-color;
+    margin: auto 0;
+    width: 100%;
+    top: 0;
+    padding: 20px 40px;
+    height: 200px;
+    flex-direction: column;
+}
+.footer__info{
+    font-size: 20px; 
+}

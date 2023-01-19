@@ -1,0 +1,20 @@
+@use '../abstract/colors' as b; 
+.button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 1.125rem 1.875rem;
+    border-radius: 10px;
+    border: none;
+  }
+
+  .button--mode_orange{
+    color: b.$white-color;
+    background: b.$orange-color;
+  }
+  
+  .button--mode_green {
+    color: b.$white-color;
+    background: b.$green-color;
+  }
+  

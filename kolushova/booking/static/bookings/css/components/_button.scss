@@ -1,0 +1,16 @@
+@use '../abstract/colors' as b; 
+.form__submit, .whoamI__link {
+    background:   b.$green-color;
+    border: 2px solid   b.$green-color;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding: 12px 24px 11px;
+    margin: 20px;
+    border-radius: 16px;
+    &:hover {
+        color: b.$white-color;
+        cursor: pointer; 
+        text-decoration: underline; 
+    } 
+}

@@ -1,0 +1,75 @@
+@use '../abstract/colors' as b;
+@use "sass:map";
+@use "sass:color";
+@use '../abstract/fonts' as *;
+@use '../abstract/mixins' as *;
+@use '../abstract/placeholders' as *;
+
+
+* {
+    color: b.$white-color;
+}
+
+::-webkit-scrollbar {
+    background-color: b.$black-color;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: b.$green-color;
+}
+
+li {
+    list-style-type: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: b.$orange-color;
+
+    &:hover {
+        color: b.$white-color;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+body {
+    font-family: Roboto, 'Open Sans', sans-serif;
+    font-style: normal;
+    >footer {
+        position: sticky;
+        top: 100vh;
+    }
+}
+
+span {
+    color: color.change(b.$orange-color, $lightness: 90%, $alpha: 0.9);
+    font-weight: 700;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+h2 {
+    @extend %text-vid;
+    @include text($margin: 0.83em);
+    font-weight: map.get($font-weights, "bold");
+}
+
+h3 {
+    @extend %text-vid;
+    @include text;
+    font-weight: map.get($font-weights, "regular");
+    font-size: 1.17em;
+}
+
+p {
+    @include text;
+    @extend %text-vid;
+    font-size: 18px;
+    line-height: 24px;
+}
